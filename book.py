@@ -16,3 +16,13 @@ class Bookcase:
         for title, author in book_list:
             books.append(Book(title, author))
         return cls(books)
+
+class MyClass:
+    def method(self):
+        return 'instance method called', self
+    @classmethod
+    def classmethod(cls):
+        return 'class method called', self
+    @staticmethod
+    def staticmethod():
+        return 'static method called'
