@@ -15,4 +15,4 @@ class Bookcase:
         books = []
         for title, author in book_list:
             books.append(Book(title, author))
-            return cls(books)
+        return cls(books)
