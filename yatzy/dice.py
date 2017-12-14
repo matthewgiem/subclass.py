@@ -1,6 +1,6 @@
 import random
 
-class Die:
+class Die(object):
 
     def __init__(self, sides=2, value=0):
         if not sides >=2:
@@ -43,5 +43,5 @@ class Die:
 
 
 class D6(Die):
-    def __init__(self, value=0):
-         super().__init__(sides=6, value=value)
+    def __init__(self, sides=6, value=0):
+         super(D6, self).__init__(sides=6)
