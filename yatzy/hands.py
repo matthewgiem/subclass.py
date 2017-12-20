@@ -13,4 +13,4 @@ class Hand(list):
 
 class YatzyHand(Hand):
     def __init__(self, *args, **kwargs):
-        super().__init__(size=6, die_class=D6, *args, **kwargs)
+        super(YatzyHand, self).__init__(size=6, die_class=D6, *args, **kwargs)

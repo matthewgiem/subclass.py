@@ -9,3 +9,5 @@ print(D6.value)
 hand = Hand(size=5, die_class=dice.D6)
 print(type(hand))
 print(hand)
+
+yh = YatzyHand()
