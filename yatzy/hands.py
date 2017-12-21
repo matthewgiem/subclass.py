@@ -44,5 +44,16 @@ class YatzyHand(Hand):
         return self._by_value(5)
 
     @property
-    def sixs(self):
+    def sixes(self):
         return self._by_value(6)
+
+    @property
+    def _sets(self):
+        return {
+        1: len(self.ones),
+        2: len(self.twos),
+        3: len(self.threes),
+        4: len(self.fours),
+        5: len(self.fives),
+        6: len(self.sixes)
+    }
