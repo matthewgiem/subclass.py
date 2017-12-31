@@ -1,3 +1,5 @@
+from hands import YatzyHand
+
 class YatzyScoresheet:
     def score_ones(self, hand):
         return sum(hand.ones)
@@ -35,3 +37,8 @@ class YatzyScoresheet:
             return 50
         else:
             return 0
+
+    @property
+    def full_house(self):
+        if all(k in self._sets for k in (2,3)):
+            return True
